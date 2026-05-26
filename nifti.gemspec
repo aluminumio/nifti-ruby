@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.authors     = ["Jonathan Siegel"]
   spec.email       = ["jonathan@siegel.io"]
 
-  spec.summary     = "Ruby reader for NIfTI-1 medical-imaging volumes"
-  spec.description = "Pure-Ruby reader for the NIfTI-1 single-file format (.nii / .nii.gz), " \
-                     "verified bit-identical against Python's nibabel."
+  spec.summary     = "Ruby reader and writer for NIfTI-1 medical-imaging volumes"
+  spec.description = "Pure-Ruby reader and writer for the NIfTI-1 single-file format " \
+                     "(.nii / .nii.gz), verified bit-identical against Python's nibabel."
   spec.homepage    = "https://github.com/aluminumio/nifti-ruby"
   spec.license     = "MIT"
 
@@ -29,5 +29,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", ">= 2.0"
+  spec.add_development_dependency "numo-narray", "~> 0.9"
   spec.add_development_dependency "rspec", "~> 3.13"
 end
