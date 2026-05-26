@@ -1,0 +1,28 @@
+affine:
+- - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+- - 0.0
+  - 1.0
+  - 0.0
+  - 0.0
+- - 0.0
+  - 0.0
+  - 1.0
+  - 0.0
+- - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+description: ''
+dtype: float64
+gzipped: true
+intent_code: 0
+intent_name: ''
+name: float64_4x4x4
+output_filename: float64_4x4x4.nii.gz
+shape:
+- 4
+- 4
+- 4

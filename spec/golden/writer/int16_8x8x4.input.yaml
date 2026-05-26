@@ -1,0 +1,28 @@
+affine:
+- - 2.0
+  - 0.0
+  - 0.0
+  - 0.0
+- - 0.0
+  - 2.0
+  - 0.0
+  - 0.0
+- - 0.0
+  - 0.0
+  - 3.0
+  - 0.0
+- - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+description: ''
+dtype: int16
+gzipped: false
+intent_code: 0
+intent_name: ''
+name: int16_8x8x4
+output_filename: int16_8x8x4.nii
+shape:
+- 8
+- 8
+- 4

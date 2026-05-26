@@ -1,0 +1,28 @@
+affine:
+- - 1.5
+  - 0.0
+  - 0.0
+  - 0.0
+- - 0.0
+  - 1.5
+  - 0.0
+  - 0.0
+- - 0.0
+  - 0.0
+  - 1.5
+  - 0.0
+- - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+description: shoulder bone segmentation
+dtype: int32
+gzipped: true
+intent_code: 1002
+intent_name: label_map
+name: label_map_int32
+output_filename: label_map_int32.nii.gz
+shape:
+- 6
+- 6
+- 6

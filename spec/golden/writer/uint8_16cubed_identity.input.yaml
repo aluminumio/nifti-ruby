@@ -1,0 +1,28 @@
+affine:
+- - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+- - 0.0
+  - 1.0
+  - 0.0
+  - 0.0
+- - 0.0
+  - 0.0
+  - 1.0
+  - 0.0
+- - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+description: ''
+dtype: uint8
+gzipped: true
+intent_code: 0
+intent_name: ''
+name: uint8_16cubed_identity
+output_filename: uint8_16cubed_identity.nii.gz
+shape:
+- 16
+- 16
+- 16
