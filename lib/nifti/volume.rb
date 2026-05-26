@@ -121,6 +121,25 @@ module Nifti
       dim[1, ndim] || []
     end
 
+    # Write this volume to disk as a NIfTI-1 single-file. With no overrides
+    # this is a true round-trip: the same data + affine + intent are encoded
+    # back. The on-disk bytes may differ from the original file in a few
+    # fields where nibabel and Writer use slightly different defaults, but
+    # all read-back parsed values match exactly.
+    def write(path, **overrides)
+      Nifti::Writer.write_raw(
+        raw_bytes,
+        path,
+        shape:       overrides.fetch(:shape, shape),
+        dtype:       overrides.fetch(:dtype, dtype),
+        affine:      overrides.fetch(:affine, affine),
+        voxel_size:  overrides.fetch(:voxel_size, voxel_size),
+        description: overrides.fetch(:description, header[:descrip]),
+        intent_name: overrides.fetch(:intent_name, header[:intent_name]),
+        intent_code: overrides.fetch(:intent_code, header[:intent_code])
+      )
+    end
+
     private
 
     def unpack_format
